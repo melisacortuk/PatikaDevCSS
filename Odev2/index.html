@@ -1,69 +1,74 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odev2</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Google</title>
+<style>
+    .content{
+        background-color: aqua;
+        text-align: center;
+        display: inline-block;
+        height: 150px;
+        margin-top: 0;
+    }
 
-
+    li{
+        list-style-type: none;
+    }
+</style>
 </head>
 <body>
-    <div class="banner"><a href="https://tr.wikipedia.org/wiki/Google" target="_blank"><img class="google" src="img/google.jpg" alt="google wiki" title="Go Wiki!"></a></div>
-    <div class="searchBox">Search the web using Google!
-        <div>
-            <tr>
-                <td><input type="text" class="aramaKutusu"></td>
-            </tr>
-            <div>
-                <tr>
-                    <td><input type="button" class="buton1" value="Google Search"></td>
-                    <td><input type="button" value="I'm feeling lucky"></td>
-                </tr>
-            </div>
-        </div>
+
+    <!---- header start-->
+    <header style="text-align: center;">
+        <img src="https://web.archive.org/web/19990504112211im_/http://www.google.com/google.jpg" alt="google">
+    </header>
+    <!---- header end-->
+
+    <!-- content start-->
+    <!--top content start-->
+    <div style="background-color: lightgray;text-align: center;margin-bottom: 2px;">
+        <p>Search the web using Google!</p>
+        <input type="text" size="65"><br>
+        <button type="button">Google Search</button>
+        <button type="button">I'm feeling lucky</button>
     </div>
-    <div class="bottom">
-        <div class="bottom1">
-                <ul>
-                    <li>Special Searches</li>
-                    <li><a href="">Stanford Search</a></li>
-                    <li><a href="">Linux Search</a></li>
-                </ul>
-        </div>
-        <div class="bottom2">
-            <div class="bottom2in">
-                <ul>
-                    <li><a href="">Help!</a></li>
-                    <li><a href="">About Google!</a></li>
-                    <li><a href="">Company Info</a></li>
-                    <li><a href="">Google! Logos</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="bottom3">
-            <div class="bottom3in1">
-                <div class="bottom3in11">
-                    <ul>
-                        <li>Get Google!</li>
-                        <li>updates monthly:</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="bottom3in2">
-                <table>
-                    <tr width="50px">
-                        <td><input type="text" value="Enter your mail address!"></td>
-                    </tr>
-                </table>
-            </div>
-            <div class="bottom3in3">
-                <input type="button" name="" id="buttonSc" value="Subscribe">
-                <span id="arc"><a href="">Archive</a></span>
-            </div>
-        </div>
+     <!--top content end-->
+
+
+    <div class="content" style="width:500px;float: left;font-size: 20px;">
+        <ul>
+            <li>Special Searches</li>
+            <li><a href="#">Standford Search</a></li>
+            <li><a href="#">Linux Search</a></li>
+
+        </ul>
     </div>
-    <div class="footer">Copyright ©1998 Google Inc. </div>
+    <div class="content" style="width:346px;margin:0 2px">
+        <ul style="float:center;">
+            <li><a href="#">Help</a></li>
+            <li><a href="#">About Google!</a></li>
+            <li><a href="#">Company Info</a></li>
+            <li><a href="#">Google! Logos</a></li>
+        </ul>
+    </div>
+    <div class="content" style="width:500px; float: right;">
+        <p>Get Google!<br> updates monthly:</p>
+        <input type="text"><br>
+        <button type="button">Subscribe</button>
+        <span><a href="#">Archive</a></span>
+    </div>
+
+
+    <!-- content end-->
+
+    <!-- footer start-->
+    <div style="text-align: center">
+        <p>Copyright &copy; 1998 Google Inc.</p>
+    </div>
+    <!-- footer end-->
+
 </body>
 </html>
